@@ -16,7 +16,7 @@ namespace Assets.Script
         [SerializeField] private NetworkRunner networkRunner = null;
         [SerializeField] private NetworkPrefabRef playerPrefab;
 
-        private Dictionary<PlayerRef, NetworkObject> playerList = new();
+        private Dictionary<PlayerRef, NetworkObject> playerList = new Dictionary<PlayerRef, NetworkObject>();
         private void Start()
         {
             StartGame(GameMode.AutoHostOrClient);
